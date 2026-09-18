@@ -17,12 +17,12 @@ Projekt jest przeznaczony wyłącznie do testowania aplikacji, urządzeń i quiz
 
 Obszar obrazu po przycięciu, który trafia do OCR:
 
-[![Podgląd pliku OCR](image/last_ocr_crop.png)](image/last_ocr_crop.png)
+<a href="image/last_ocr_crop.png"><img src="image/last_ocr_crop.png" alt="Podgląd pliku OCR" width="30%"></a>
 
 Przykładowe ekrany z pytaniami quizowymi:
 
-[![Przykładowe pytanie 1](image/screen_20260917_233653_757792.png)](image/screen_20260917_233653_757792.png)
-[![Przykładowe pytanie 2](image/screen_20260917_233704_723458.png)](image/screen_20260917_233704_723458.png)
+<a href="image/screen_20260917_233653_757792.png"><img src="image/screen_20260917_233653_757792.png" alt="Przykładowe pytanie 1" width="30%"></a>
+<a href="image/screen_20260917_233704_723458.png"><img src="image/screen_20260917_233704_723458.png" alt="Przykładowe pytanie 2" width="30%"></a>
 
 ## Wymagania
 
