@@ -1,0 +1,63 @@
+{
+  "config": {
+    "db": "quiz.sqlite3",
+    "model": "google/gemini-2.5-flash-lite",
+    "option_coords": {
+      "1": [125, 1380],
+      "2": [125, 1583],
+      "3": [125, 1740]
+    }
+  },
+  "steps": [
+    {"action": "log", "message": "Start: szukam kafelka quizu"},
+    {"action": "tap_text", "text": "Rozwiąż quiz i zdobądź dodatkową naklejkę"},
+
+    {"action": "log", "message": "Wpisuję kod"},
+    {"action": "wait_input_field_and_type", "text": "{code}"},
+    {"action": "press_enter"},
+
+    {"action": "log", "message": "Klikam Zagraj i czekam na WebView"},
+    {"action": "tap_text", "text": "Zagraj"},
+    {"action": "wait_random", "min": 1.5, "max": 4.0},
+    {"action": "wait_webview", "timeout": 20},
+
+    {"action": "log", "message": "Odznaczam checkbox regulaminu (stałe koordynaty)"},
+    {"action": "checkbox_tap", "x": 413, "y": 1858},
+    {"action": "tap_text", "text": "Rozpocznij quiz"},
+
+    {"action": "log", "message": "Pytanie 1"},
+    {"action": "solve_and_tap",
+     "wait_before_min": 1.0, "wait_before_max": 2.0},
+
+    {"action": "wait_random", "min": 1.0, "max": 2.0},
+
+    {"action": "log", "message": "Pytanie 2"},
+    {"action": "solve_and_tap",
+     "wait_before_min": 1.0, "wait_before_max": 2.0},
+
+    {"action": "wait_random", "min": 1.0, "max": 2.0},
+
+    {"action": "log", "message": "Pytanie 3"},
+    {"action": "solve_and_tap",
+     "wait_before_min": 1.0, "wait_before_max": 2.0},
+
+    {"action": "wait_random", "min": 1.0, "max": 2.0},
+
+    {"action": "log", "message": "Pytanie 4"},
+    {"action": "solve_and_tap",
+     "wait_before_min": 1.0, "wait_before_max": 2.0},
+
+    {"action": "wait_random", "min": 1.0, "max": 2.0},
+
+    {"action": "log", "message": "Pytanie 5"},
+    {"action": "solve_and_tap",
+     "wait_before_min": 1.0, "wait_before_max": 2.0},
+
+    {"action": "log", "message": "Koniec — klikam przycisk zakończenia"},
+    {"action": "tap_text", "text": "Wróć do aplikacji"},
+
+    {"action": "log", "message": "Koniec scenariusza"},
+    {"action": "tap_text", "text": "Wyjdź"}
+
+  ]
+}
